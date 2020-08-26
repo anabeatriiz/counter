@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body,
+button {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse farthest-corner at center top, #f39264 0%, #f2606f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title_container {
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+}
+
+.box_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 15rem;
+}
+
+.buttons {
+    font-size: 5rem;
+    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+    height: 6rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.number_first {
+    font-size: 8rem;
+    margin: 0 2rem;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+}
+
+.box_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_effect {
+    font-size: 1.5rem;
+    width: 6rem;
+    height: 3rem;
+    border: 1px solid;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background: transparent;
+    margin-right: 2rem;
+}
+
+#randombtn {
+    margin-right: 0;
+}
+
+.button_effect:hover {
+    background: #f39c74;
+    transition: 0.3s;
+}
