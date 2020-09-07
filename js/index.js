@@ -1,41 +1,40 @@
 let numero = 0;
 
-let reset = document.getElementById('reset');
+const reset = document.querySelector('.button_effect');
 reset.addEventListener('click', resetar);
 
-let decrement = document.getElementById('decrement')
+const decrement = document.querySelector('.buttons');
 decrement.addEventListener('click', decrementar);
 
-let incremet = document.getElementById('increment');
+const incremet = document.querySelectorAll('.buttons')[1];
 incremet.addEventListener('click', incrementar);
 
-let numberInitial = document.getElementById('number_initial');
+const numberInitial = document.querySelector('.number_first');
 
-let numberRandom = document.getElementById('randombtn');
+const numberRandom = document.querySelectorAll('.button_effect')[1];
 numberRandom.addEventListener('click', btnRandom);
 
 
 function resetar() {
     numero = 0;
-    numberInitial.innerHTML = numero;
+    numberInitial.textContent = numero;
     console.log(numero)
 }
 
 function incrementar() {
     numero++;
-    numberInitial.innerHTML = numero;
+    numberInitial.textContent = numero;
     console.log(numero)
 }
 
-
 function decrementar() {
     numero--;
-    numberInitial.innerHTML = numero;
+    numberInitial.textContent = numero;
     console.log(numero);
 }
 
 function btnRandom() {
-    numero = Math.floor(Math.random() * 1000);
-    numberInitial.innerHTML = numero;
+    numero = Math.floor(Math.random() * 100);
+    numberInitial.textContent = numero;
     console.log(numero)
 }

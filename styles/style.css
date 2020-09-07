@@ -4,7 +4,10 @@
     box-sizing: border-box;
     outline: none;
 }
-
+:root {
+    --colorBtn: #f39c74;
+    --colorBshadow: rgba(62, 9, 11, .3);
+}
 html,
 body,
 button {
@@ -36,7 +39,7 @@ button {
 
 .buttons {
     font-size: 5rem;
-    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+    box-shadow: 0 7px 30px var(--colorBshadow);
     height: 6rem;
     width: 4rem;
     display: flex;
@@ -73,11 +76,11 @@ button {
     margin-right: 2rem;
 }
 
-#randombtn {
+.randombtn {
     margin-right: 0;
 }
 
 .button_effect:hover {
-    background: #f39c74;
+    background: var(--colorBtn);
     transition: 0.3s;
 }
